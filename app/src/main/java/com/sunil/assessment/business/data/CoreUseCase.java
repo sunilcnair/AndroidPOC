@@ -8,6 +8,8 @@ import retrofit2.Response;
 
 /**
  * Created by sunil on 31-01-2018.
+ * The UseCase class which is used by Presenter to initiate the RX calls.
+ * It initiate calls to CoreApi class for Retrofit Get Requests and save the response to DomainModel object
  */
 
 public class CoreUseCase {

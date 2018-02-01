@@ -6,6 +6,8 @@ import java.io.Serializable;
 
 /**
  * Created by sunil on 31-01-2018.
+ * Pojo class for Retrofit JSON parsed response.
+ * Each tag is added with getter setter methods.
  */
 
 public class PocDataObject implements Serializable {

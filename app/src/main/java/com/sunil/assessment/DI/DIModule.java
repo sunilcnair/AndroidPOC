@@ -22,7 +22,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * Created by sunil on 31-01-2018.
- * This class give dependency injection. It initialize the Retrofit library and the service provider class
+ * This class give dependency injection. It initialize the Retrofit library and the service provider class.
  */
 
 @Module

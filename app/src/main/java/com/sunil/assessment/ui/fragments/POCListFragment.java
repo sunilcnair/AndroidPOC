@@ -54,9 +54,7 @@ public class POCListFragment extends Fragment implements POCListContract.View{
     private PocListAdapter mAdapter;
 
     /**
-     * Use this factory method to create a new instance of
-     * this fragment
-     * @return A new instance of fragment ActorsListFragment.
+     * Fragment class as part of View .
      */
     public static POCListFragment newInstance() {
         return new POCListFragment();

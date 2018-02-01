@@ -5,6 +5,8 @@ import com.sunil.assessment.business.model.PocDomainModel;
 
 /**
  * Created by sunil on 01-02-2018.
+ * This is a contract interface bwteen View (fragment) and Presenter.
+ * This allows abstraction and loose coupling between view and presenter.
  */
 
 public interface POCListContract {

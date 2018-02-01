@@ -8,6 +8,7 @@ import retrofit2.http.GET;
 
 /**
  * Created by sunil on 31-01-2018.
+ * This class provides API for Retrofit calls. Can use <GET>, <POST> , <CALL> methods for Requests
  */
 
 
@@ -15,7 +16,7 @@ import retrofit2.http.GET;
 public interface CoreApi {
 
     /**
-     * Get list of actors
+     * Get list of content from the JSON URL
      * @return {@link PocDomainModel} with all details
      */
     @GET("facts")

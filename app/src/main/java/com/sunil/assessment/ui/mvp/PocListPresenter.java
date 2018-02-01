@@ -14,6 +14,7 @@ import io.reactivex.functions.Action;
 
 /**
  * Created by sunil on 01-02-2018.
+ * Presenter class as part of MVP pattern
  */
 
 public class PocListPresenter implements POCListContract.Presenter{

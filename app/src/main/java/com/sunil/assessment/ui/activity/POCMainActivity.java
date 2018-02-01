@@ -9,6 +9,11 @@ import android.os.Bundle;
 import com.sunil.assessment.R;
 import com.sunil.assessment.ui.fragments.POCListFragment;
 
+/**
+ * Created by sunil on 31-01-2018.
+ * This is the main activity for showing the list of data
+ */
+
 public class POCMainActivity extends AppCompatActivity {
 
     @Override

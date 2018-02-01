@@ -15,6 +15,7 @@ import butterknife.ButterKnife;
 
 /**
  * Created by sunil on 01-01-2018.
+ * Recycler view holder class
  */
 
 public class PocItem extends RecyclerView.ViewHolder {

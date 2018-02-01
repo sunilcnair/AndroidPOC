@@ -18,6 +18,14 @@ Hence use
 - Uses Dependency Injection with Dagger2
 - Unit testing with Mockito framework
 
+## Folder Structure
+
+- it is divided into 3 : Business, DI ( dependency Injection) , UI
+- Business layer contains
+      - Data = contains core API and Usecase classes for retrofit calls
+      - model = contain the POJO classes Data object and DomainModel as JSON responses
+- DI layer contains Dependency module and interface for Dagger
+- UI layer contains - Activity, Fragment and MVP ( presenter, contract interface and Recylcer view adapter)
 
 ## BUILD and RUN
 

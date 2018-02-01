@@ -6,6 +6,7 @@ import java.util.List;
 
 /**
  * Created by sunil on 31-01-2018.
+ * DomainModel object as the response from Retrofit calls. Used by Presenter to get the data
  */
 
 public class PocDomainModel {
