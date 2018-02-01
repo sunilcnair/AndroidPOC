@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">About Canada</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="base_url">https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/</string>
+    <string name="personal_details">Information</string>
+    <string name="title_activity_actor_details">POCDetailsActivity</string>
+</resources>
