@@ -48,7 +48,7 @@ public class POCDetailsFragment extends Fragment {
         // Inflate the layout for this fragment
       View mRoot = inflater.inflate(R.layout.fragment_content_details, container, false);
         ButterKnife.bind(this, mRoot);
-        mData = (PocDataObject) getActivity().getIntent().getSerializableExtra(PocDataObject.class.getSimpleName());
+        mData = (PocDataObject) getArguments().getSerializable(PocDataObject.class.getSimpleName());
         return mRoot;
     }
     /**

@@ -1,5 +1,6 @@
 package com.sunil.assessment.ui.fragments;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -39,6 +40,7 @@ import butterknife.ButterKnife;
 public class POCListFragment extends Fragment implements POCListContract.View{
 
     private static final String TAG = POCListFragment.class.getSimpleName();
+    OnRowSelectedListener mCallback;
 
     @Inject
     CoreUseCase mCoreUsecase;
@@ -91,6 +93,12 @@ public class POCListFragment extends Fragment implements POCListContract.View{
     public void onAttach(Context context) {
         super.onAttach(context);
 
+        try {
+            mCallback = (OnRowSelectedListener) context;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(context.toString()
+                    + " must implement OnHeadlineSelectedListener");
+        }
     }
 
     @Override
@@ -115,9 +123,8 @@ public class POCListFragment extends Fragment implements POCListContract.View{
     }
 
     @Override
-    public void openDataDetails(PocDataObject mActor) {
-        startActivity(new Intent(getContext(), POCDetailsActivity.class)
-                .putExtra(PocDataObject.class.getSimpleName(), mActor));
+    public void openDataDetails(PocDataObject mData) {
+       mCallback.onArticleSelected(mData);
     }
 
     @Override
@@ -137,5 +144,8 @@ public class POCListFragment extends Fragment implements POCListContract.View{
         mProgressBar.setVisibility(View.INVISIBLE);
     }
 
-
+    // Container Activity must implement this interface
+    public interface OnRowSelectedListener {
+        public void onArticleSelected(PocDataObject mData);
+    }
 }
